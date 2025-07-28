@@ -50,7 +50,7 @@ function App() {
     console.log("Form data submitted:", formData);
     try {
       const response = await axios.post(
-        "http://localhost:5000/predict",
+        "http://127.0.0.1:7860/predict",
         formData
       );
       setPrediction(response.data);
